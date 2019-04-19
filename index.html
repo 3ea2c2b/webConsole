@@ -7,16 +7,30 @@
         <script src="./lib/keyBoardLisener.js"></script>
 	</head>
     <body>
-        <script src="./lib/src.js"></script>
+
+        <script src="./lib/src.js"></script>        
+        <div class="hidden_back">
+            <input id="commandInput" class="hidden">
+        </div>
         <style>
             * {
                 padding: 0;
                 margin: 0;
             }
         </style>
-        <div class="hidden">
-            <input id="commandInput">
-        </div>
+        <style>
+            .hidden_back {
+                background-color: black;
+                z-index: 2;
+            }
 
+            .hidden {
+                background-color: transparent;
+                border: hidden;
+                outline: none;
+                z-index: 2;
+                position: absolute;
+            }
+        </style>
     </body>
 </html>
